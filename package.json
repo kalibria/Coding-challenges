@@ -1,0 +1,11 @@
+{
+  "name": "coding-challenges",
+  "version": "1.0.0",
+  "description": "Tasks from various coding challenge resources like codewars.com, leetcode, etc.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Maryia Kushlianskaya",
+  "license": "ISC"
+}
