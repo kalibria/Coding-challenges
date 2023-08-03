@@ -9,16 +9,20 @@
 
 
 function comp(array1, array2){
-  const sqrtArr = array2.map(item => Math.sqrt(item));
-  const sortedArr1 = array1.sort((a, b) => b -a);
-  const sortedsqrtArr = sqrtArr.sort((a, b) => b -a);
+  if(array1 !== null && array2 !== null){
+    const sqrtArr = array2.map(item => Math.sqrt(item));
+    const sortedArr1 = array1.sort((a, b) => b -a);
+    const sortedSqrtArr = sqrtArr.sort((a, b) => b -a);
 
-  const unicNumber = sortedArr1.filter((item, index) => item !== sortedsqrtArr[index]);
+    const unicNumber = sortedArr1.filter((item, index) => item !== sortedSqrtArr[index]);
 
-  if(unicNumber.length > 0){
+    if(unicNumber.length > 0){
+      return false
+    }else {
+      return true
+    }
+  }else{
     return false
-  }else {
-    return true
   }
 
 }
